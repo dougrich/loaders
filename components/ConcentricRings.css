@@ -1,0 +1,55 @@
+/* concentric rings */
+
+.conrings {
+  --conrings-timing: 20s;
+}
+
+.conrings__ring {
+  transform-origin: 0 0;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes conrings__ring__0 {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(35deg); }
+  50% { transform: rotate(256deg); }
+  60% { transform: rotate(134deg); }
+  90% { transform: rotate(320deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.conrings__ring__0 {
+  animation-name: conrings__ring__0;
+  animation-duration: calc(var(--conrings-timing) / 5);
+}
+
+@keyframes conrings__ring__1 {
+  0% { transform: rotate(90deg); }
+  20% { transform: rotate(34deg); }
+  35% { transform: rotate(200deg); }
+  55% { transform: rotate(300deg); }
+  75% { transform: rotate(250deg); }
+  100% { transform: rotate(450deg); }
+}
+
+.conrings__ring__1 {
+  animation-name: conrings__ring__1;
+  animation-duration: calc(var(--conrings-timing) / 3);
+}
+
+@keyframes conrings__ring__2 {
+  0% { transform: rotate(10deg); }
+  15% { transform: rotate(40deg); }
+  30% { transform: rotate(270deg); }
+  40% { transform: rotate(200deg); }
+  55% { transform: rotate(290deg); }
+  70% { transform: rotate(350deg); }
+  90% { transform: rotate(340deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.conrings__ring__2 {
+  animation-name: conrings__ring__2;
+  animation-duration: calc(var(--conrings-timing) / 2);
+}
