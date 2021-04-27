@@ -1,0 +1,44 @@
+/* box loader */
+@keyframes box__square {
+  0% {
+    transform: translate(0, 25px);
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+
+  12% {
+    transform: translate(0, 0);
+    opacity: 1;
+    animation-timing-function: linear;
+  }
+
+  88% {
+    transform: translate(0, 0);
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    transform: translate(25px, 0);
+    opacity: 0;
+  }
+}
+
+.box__square {
+  animation: box__square 2s infinite;
+  stroke: white;
+  stroke-width: 2px;
+}
+
+.box__g {
+  transform-origin: 0 0;
+}
+
+.box__g0 { transform: rotate(0deg); }
+.box__g0 .box__square { animation-delay: -2000ms; }
+.box__g1 { transform: rotate(-90deg); }
+.box__g1 .box__square { animation-delay: -1500ms; }
+.box__g2 { transform: rotate(-180deg); }
+.box__g2 .box__square { animation-delay: -1000ms; }
+.box__g3 { transform: rotate(-270deg); }
+.box__g3 .box__square { animation-delay: -500ms; }
