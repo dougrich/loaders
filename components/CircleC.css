@@ -1,0 +1,23 @@
+@keyframes circlec__tick {
+  0% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(135deg);
+  }
+  50% {
+    transform: rotate(225deg);
+  }
+  75% {
+    transform: rotate(315deg);
+  }
+  100% {
+    transform: rotate(405deg);
+  }
+}
+
+.circlec__tick {
+  transform-origin: 0px 0px;
+  animation: circlec__tick 1s infinite;
+  animation-timing-function: linear;
+}
