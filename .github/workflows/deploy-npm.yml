@@ -1,0 +1,22 @@
+name: deploy-npm
+on:
+  push:
+    tags:
+    - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+      - name: Build & Test Node
+        run: |-
+          npm ci
+          npm run lint && npm run test
+          npm run deploy:storybook -- --ci
+      - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
