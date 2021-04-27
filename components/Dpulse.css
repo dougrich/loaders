@@ -1,0 +1,37 @@
+
+/* dpulse */
+
+.dpulse {
+  --timing: 1s;
+}
+
+@keyframes dpulse__box {
+  0% { stroke-dasharray: 0 0 0 200 0 200; }
+  25% { stroke-dasharray: 0 0 25 150 25 200; }
+  50% { stroke-dasharray: 0 37.5 25 75 25 200; }
+  75% { stroke-dasharray: 0 75 25 0 25 200; }
+  100% { stroke-dasharray: 0 100 0 0 0 200; }
+}
+
+.dpulse__center,
+.dpulse__box {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 4;
+}
+
+.dpulse__box {
+  transform: rotate(45deg);
+  animation: dpulse__box var(--timing) linear infinite;
+}
+
+@keyframes dpulse__center {
+  0% { transform: translate(0, 0) rotate(45deg); }
+  25% { transform: translate(0, -2px) rotate(45deg); }
+  75% { transform: translate(0, 2px) rotate(45deg); }
+  100% { transform: translate(0, 0) rotate(45deg); }
+}
+
+.dpulse__center {
+  animation: dpulse__center var(--timing) infinite;
+}
