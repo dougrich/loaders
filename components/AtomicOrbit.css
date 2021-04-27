@@ -1,0 +1,28 @@
+
+@keyframes atomic__orbit {
+  0% { transform: rotateZ(0deg); }
+  50% { transform: rotateZ(180deg); }
+  100% { transform: rotateZ(360deg); }
+}
+
+.atomic__orbit {
+  animation-name: atomic__orbit;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 0, 0;
+}
+
+.atomic__orbit__0 {
+  animation-duration: 2.1s;
+  animation-delay: -2314ms;
+}
+
+.atomic__orbit__1 {
+  animation-duration: 3.1s;
+  animation-delay: -431ms;
+}
+
+.atomic__orbit__2 {
+  animation-duration: 4.5s;
+  animation-delay: -1230ms;
+}
