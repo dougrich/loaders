@@ -1,0 +1,59 @@
+@keyframes spring__spring {
+  0% {
+    stroke-dasharray: 0 0 8 200;
+    stroke-width: 3;
+    animation-timing-function: ease-in;
+  }
+
+  5% {
+    stroke-dasharray: 0 0 10 200;
+    stroke-width: 3;
+    animation-timing-function: ease-in;
+  }
+
+  25% {
+    stroke-dasharray: 0 38.5 30 200;
+    stroke-width: 1;
+    animation-timing-function: ease-out;
+  }
+
+  45% {
+    stroke-dasharray: 0 100 10 200;
+    stroke-width: 3;
+    animation-timing-function: ease-in;
+  }
+
+  45% {
+    stroke-dasharray: 0 102 8 200;
+    stroke-width: 3;
+    animation-timing-function: ease-in;
+  }
+
+  55% {
+    stroke-dasharray: 0 100 10 200;
+    stroke-width: 3;
+    animation-timing-function: ease-in;
+  }
+
+  75% {
+    stroke-dasharray: 0 38.5 30 200;
+    stroke-width: 1;
+    animation-timing-function: ease-out;
+  }
+
+  95% {
+    stroke-dasharray: 0 0 10 200;
+    stroke-width: 3;
+  }
+
+  100% {
+    stroke-dasharray: 0 0 8 200;
+    stroke-width: 3;
+  }
+}
+
+.spring__spring {
+  fill: transparent;
+  stroke: black;
+  animation: spring__spring 2s infinite;
+}
