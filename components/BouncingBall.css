@@ -1,0 +1,41 @@
+@keyframes bouncing-ball__bounce {
+  0% { transform: translate(-45px,0); }
+  25% { transform: translate(0px,0); }
+  50% { transform: translate(45px,0); }
+  75% { transform: translate(0px,0); }
+  100% { transform: translate(-45px,0); }
+}
+
+@keyframes bouncing-ball__spin {
+  0% { transform: rotate(90deg); }
+  25% { transform: rotate(180deg); }
+  50% { transform: rotate(270deg); }
+  75% { transform: rotate(360deg); }
+  100% { transform: rotate(450deg); }
+}
+
+.bouncing-ball__n {
+  transform: translate(-45px,0);
+  animation: bouncing-ball__bounce 4s linear infinite;
+}
+
+.bouncing-ball__0 { transform: rotate(0deg); }
+.bouncing-ball__n0 .bouncing-ball__n { animation-delay: 0s; }
+.bouncing-ball__n1 { transform: rotate(22.5deg); }
+.bouncing-ball__n1 .bouncing-ball__n { animation-delay: -250ms; }
+.bouncing-ball__n2 { transform: rotate(45deg); }
+.bouncing-ball__n2 .bouncing-ball__n { animation-delay: -500ms; }
+.bouncing-ball__n3 { transform: rotate(67.5deg); }
+.bouncing-ball__n3 .bouncing-ball__n { animation-delay: -750ms; }
+.bouncing-ball__n4 { transform: rotate(90deg); }
+.bouncing-ball__n4 .bouncing-ball__n { animation-delay: -1000ms; }
+.bouncing-ball__n5 { transform: rotate(112.5deg); }
+.bouncing-ball__n5 .bouncing-ball__n { animation-delay: -1250ms; }
+.bouncing-ball__n6 { transform: rotate(135deg); }
+.bouncing-ball__n6 .bouncing-ball__n { animation-delay: -1500ms; }
+.bouncing-ball__n7 { transform: rotate(157.5deg); }
+.bouncing-ball__n7 .bouncing-ball__n { animation-delay: -1750ms; }
+
+.bouncing-ball__spinner {
+  animation: bouncing-ball__spin 8s linear infinite;
+}
