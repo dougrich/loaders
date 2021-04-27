@@ -1,0 +1,32 @@
+
+.bookspin {
+  --timing: 3s;
+}
+
+@keyframes bookspin__page {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(180deg); }
+  50% { transform: rotate(180deg); }
+  75% { transform: rotate(0deg); }
+}
+
+.bookspin__page,
+.bookspin__spine {
+  stroke: black;
+  stroke-width: 2;
+  fill: transparent;
+}
+
+.bookspin__page {
+  transform-origin: 0 0;
+  animation: bookspin__page var(--timing) infinite;
+}
+
+.bookspin__page--0 { animation-delay: calc(-40 * var(--timing) / 40); }
+.bookspin__page--1 { animation-delay: calc(-39 * var(--timing) / 40); }
+.bookspin__page--2 { animation-delay: calc(-38 * var(--timing) / 40); }
+.bookspin__page--3 { animation-delay: calc(-37 * var(--timing) / 40); }
+.bookspin__page--4 { animation-delay: calc(-36 * var(--timing) / 40); }
+.bookspin__page--5 { animation-delay: calc(-35 * var(--timing) / 40); }
+.bookspin__page--6 { animation-delay: calc(-34 * var(--timing) / 40); }
+.bookspin__page--7 { animation-delay: calc(-33 * var(--timing) / 40); }
