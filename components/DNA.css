@@ -1,0 +1,146 @@
+
+/* dna loader */
+@keyframes dna__m {
+  0% {
+    transform: translate(-20px, 0) scale(1);
+    animation-timing-function: ease-in;
+  }
+
+  25% {
+    transform: translate(0, 0) scale(1.4);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: translate(20px, 0) scale(1);
+    animation-timing-function: ease-in;
+  }
+
+  75% {
+    transform: translate(0, 0) scale(0.8);
+    animation-timing-function: ease-out;
+  }
+  100% { transform: translate(-20px, 0) scale(1); }
+}
+
+.dna__m {
+  animation: dna__m 4s infinite;
+}
+
+@keyframes dna__l {
+  0% {
+    transform: scaleX(1);
+    animation-timing-function: ease-in;
+  }
+
+  25% {
+    transform: scaleX(0);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: scaleX(1);
+    animation-timing-function: ease-in;
+  }
+
+  75% {
+    transform: scaleX(0);
+    animation-timing-function: ease-out;
+  }
+  100% { transform: scaleX(1); }
+}
+
+.dna__l {
+  animation: dna__l 4s infinite;
+}
+
+@keyframes dna__bar {
+  0% {
+    opacity: 0;
+    transform: translate(0, -50px);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translate(0, -40px);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translate(0, 40px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(0, 50px);
+  }
+}
+
+.dna__bar {
+  animation: dna__bar 4s linear infinite;
+}
+
+.dna__bar__0 { animation-delay: -4000ms; }
+.dna__bar__0 .dna__l { animation-delay: -8000ms; }
+.dna__bar__0 .dna__ml { animation-delay: -8000ms; }
+.dna__bar__0 .dna__mr { animation-delay: -6000ms; }
+.dna__bar__1 { animation-delay: -3750ms; }
+.dna__bar__1 .dna__l { animation-delay: -7750ms; }
+.dna__bar__1 .dna__ml { animation-delay: -7750ms; }
+.dna__bar__1 .dna__mr { animation-delay: -5750ms; }
+.dna__bar__2 { animation-delay: -3500ms; }
+.dna__bar__2 .dna__l { animation-delay: -7500ms; }
+.dna__bar__2 .dna__ml { animation-delay: -7500ms; }
+.dna__bar__2 .dna__mr { animation-delay: -5500ms; }
+.dna__bar__3 { animation-delay: -3250ms; }
+.dna__bar__3 .dna__l { animation-delay: -7250ms; }
+.dna__bar__3 .dna__ml { animation-delay: -7250ms; }
+.dna__bar__3 .dna__mr { animation-delay: -5250ms; }
+.dna__bar__4 { animation-delay: -3000ms; }
+.dna__bar__4 .dna__l { animation-delay: -7000ms; }
+.dna__bar__4 .dna__ml { animation-delay: -7000ms; }
+.dna__bar__4 .dna__mr { animation-delay: -5000ms; }
+.dna__bar__5 { animation-delay: -2750ms; }
+.dna__bar__5 .dna__l { animation-delay: -6750ms; }
+.dna__bar__5 .dna__ml { animation-delay: -6750ms; }
+.dna__bar__5 .dna__mr { animation-delay: -4750ms; }
+.dna__bar__6 { animation-delay: -2500ms; }
+.dna__bar__6 .dna__l { animation-delay: -6500ms; }
+.dna__bar__6 .dna__ml { animation-delay: -6500ms; }
+.dna__bar__6 .dna__mr { animation-delay: -4500ms; }
+.dna__bar__7 { animation-delay: -2250ms; }
+.dna__bar__7 .dna__l { animation-delay: -6250ms; }
+.dna__bar__7 .dna__ml { animation-delay: -6250ms; }
+.dna__bar__7 .dna__mr { animation-delay: -4250ms; }
+.dna__bar__8 { animation-delay: -2000ms; }
+.dna__bar__8 .dna__l { animation-delay: -6000ms; }
+.dna__bar__8 .dna__ml { animation-delay: -6000ms; }
+.dna__bar__8 .dna__mr { animation-delay: -4000ms; }
+.dna__bar__9 { animation-delay: -1750ms; }
+.dna__bar__9 .dna__l { animation-delay: -5750ms; }
+.dna__bar__9 .dna__ml { animation-delay: -5750ms; }
+.dna__bar__9 .dna__mr { animation-delay: -3750ms; }
+.dna__bar__a { animation-delay: -1500ms; }
+.dna__bar__a .dna__l { animation-delay: -5500ms; }
+.dna__bar__a .dna__ml { animation-delay: -5500ms; }
+.dna__bar__a .dna__mr { animation-delay: -3500ms; }
+.dna__bar__b { animation-delay: -1250ms; }
+.dna__bar__b .dna__l { animation-delay: -5250ms; }
+.dna__bar__b .dna__ml { animation-delay: -5250ms; }
+.dna__bar__b .dna__mr { animation-delay: -3250ms; }
+.dna__bar__c { animation-delay: -1000ms; }
+.dna__bar__c .dna__l { animation-delay: -5000ms; }
+.dna__bar__c .dna__ml { animation-delay: -5000ms; }
+.dna__bar__c .dna__mr { animation-delay: -3000ms; }
+.dna__bar__d { animation-delay: -750ms; }
+.dna__bar__d .dna__l { animation-delay: -4750ms; }
+.dna__bar__d .dna__ml { animation-delay: -4750ms; }
+.dna__bar__d .dna__mr { animation-delay: -2750ms; }
+.dna__bar__e { animation-delay: -500ms; }
+.dna__bar__e .dna__l { animation-delay: -4500ms; }
+.dna__bar__e .dna__ml { animation-delay: -4500ms; }
+.dna__bar__e .dna__mr { animation-delay: -2500ms; }
+.dna__bar__f { animation-delay: -250ms; }
+.dna__bar__f .dna__l { animation-delay: -4250ms; }
+.dna__bar__f .dna__ml { animation-delay: -4250ms; }
+.dna__bar__f .dna__mr { animation-delay: -2250ms; }
