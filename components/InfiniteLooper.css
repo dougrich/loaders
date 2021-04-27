@@ -1,0 +1,13 @@
+/* infinite loop loader */
+@keyframes infinite-loop {
+  0% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: 245; }
+}
+
+/* loop as is is around 245 units long */
+.infinite-loop {
+  animation: infinite-loop 3s linear infinite;
+
+  /* stroke-dasharray: 215 30 200; */
+  stroke-dasharray: 215 30;
+}
