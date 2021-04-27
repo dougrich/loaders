@@ -1,0 +1,27 @@
+{
+  "name": "@dougrich/loaders",
+  "version": "0.1.0",
+  "description": "CSS Loaders & Spinners",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "rollup": "^2.45.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dougrich/loaders.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dougrich/loaders/issues"
+  },
+  "homepage": "https://github.com/dougrich/loaders#readme"
+}
