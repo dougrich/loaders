@@ -1,0 +1,72 @@
+.bouncer {
+  stroke: black;
+  stroke-width: 3;
+  fill: transparent;
+}
+
+@keyframes bouncer__shadow {
+  0% {
+    transform: scaleX(0.1);
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    transform: scaleX(1);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    transform: scaleX(0.1);
+  }
+}
+
+.bouncer__shadow {
+  animation: bouncer__shadow 1s infinite;
+  stroke-width: inherit;
+  stroke: inherit;
+  fill: inherit;
+}
+
+@keyframes bouncer__ball {
+  0% {
+    transform: scaleX(1) scaleY(1) translate(0, -20px) rotate(0deg);
+    animation-timing-function: linear;
+  }
+
+  10% {
+    transform: scaleX(1) scaleY(1) translate(0, -18px) rotate(10deg);
+    animation-timing-function: ease-in;
+  }
+
+  45% {
+    transform: scaleX(1) scaleY(0.9) translate(0, 29px) rotate(153deg);
+    animation-timing-function: linear;
+  }
+
+  55% {
+    transform: scaleX(1.3) scaleY(0.8) translate(0, 31px) rotate(153deg);
+    animation-timing-function: linear;
+  }
+
+  55% {
+    transform: scaleX(1) scaleY(0.9) translate(0, 29px) rotate(153deg);
+    animation-timing-function: ease-out;
+  }
+
+  90% {
+    transform: scaleX(1) scaleY(1) translate(0, -18px) rotate(350deg);
+    animation-timing-function: linear;
+  }
+
+  100% {
+    transform: scaleX(1) scaleY(1) translate(0, -20px) rotate(360deg);
+    animation-timing-function: linear;
+  }
+}
+
+.bouncer__ball {
+  animation: bouncer__ball 1s infinite;
+  stroke-width: inherit;
+  stroke: inherit;
+  fill: inherit;
+}
