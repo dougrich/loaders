@@ -1,0 +1,38 @@
+
+/* rosary */
+@keyframes rosary__bead {
+  0% { transform: rotate(0deg) translate(0, var(--rosary-diameter)); }
+  10% { transform: rotate(0deg) translate(0, var(--rosary-diameter)); }
+  90% { transform: rotate(720deg) translate(0, var(--rosary-diameter)); }
+  100% { transform: rotate(720deg) translate(0, var(--rosary-diameter)); }
+}
+
+.rosary {
+  --rosary-timing: 3s;
+  --rosary-diameter: 30px;
+  --rosary-rotation: 120deg;
+}
+
+.rosary__bead {
+  animation: rosary__bead var(--rosary-timing) ease-in-out infinite;
+  transform-origin: 0 0;
+}
+
+.rosary__0 { transform: rotate(calc(var(--rosary-rotation) * -0.4)); }
+.rosary__0 .rosary__bead { animation-delay: calc(var(--rosary-timing) * -0.92); }
+.rosary__1 { transform: rotate(calc(var(--rosary-rotation) * -0.3)); }
+.rosary__1 .rosary__bead { animation-delay: calc(var(--rosary-timing) * -0.93); }
+.rosary__2 { transform: rotate(calc(var(--rosary-rotation) * -0.2)); }
+.rosary__2 .rosary__bead { animation-delay: calc(var(--rosary-timing) * -0.94); }
+.rosary__3 { transform: rotate(calc(var(--rosary-rotation) * -0.1)); }
+.rosary__3 .rosary__bead { animation-delay: calc(var(--rosary-timing) * -0.95); }
+.rosary__4 { transform: rotate(calc(var(--rosary-rotation) * 0)); }
+.rosary__4 .rosary__bead { animation-delay: calc(var(--rosary-timing) * -0.96); }
+.rosary__5 { transform: rotate(calc(var(--rosary-rotation) * 0.1)); }
+.rosary__5 .rosary__bead { animation-delay: calc(var(--rosary-timing) * -0.97); }
+.rosary__6 { transform: rotate(calc(var(--rosary-rotation) * 0.2)); }
+.rosary__6 .rosary__bead { animation-delay: calc(var(--rosary-timing) * -0.98); }
+.rosary__7 { transform: rotate(calc(var(--rosary-rotation) * 0.3)); }
+.rosary__7 .rosary__bead { animation-delay: calc(var(--rosary-timing) * -0.99); }
+.rosary__8 { transform: rotate(calc(var(--rosary-rotation) * 0.4)); }
+.rosary__8 .rosary__bead { animation-delay: calc(var(--rosary-timing) * -1); }
