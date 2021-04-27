@@ -1,0 +1,26 @@
+.scifihex {
+  --transition-duration: 500ms;
+  --animation-duration: 1s;
+
+  transition: opacity var(--transition-duration);
+  opacity: 1;
+}
+
+.scifihex--fade-in,
+.scifihex--fade-out {
+  opacity: 0;
+}
+
+@keyframes scifihex__tile {
+  0% { opacity: 0.25; }
+  10% { opacity: 1; }
+  80% { opacity: 0.25; }
+  100% { opacity: 0.25; }
+}
+
+.scifihex__tile {
+  animation: scifihex__tile var(--animation-duration) linear infinite;
+  fill: black;
+  stroke: white;
+  stroke-width: 1;
+}
