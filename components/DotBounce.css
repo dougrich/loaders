@@ -1,0 +1,48 @@
+/* dotbounce loader */
+@keyframes dotbounce {
+  0% { transform: translate(0, 0) scaleX(1); }
+  10% { transform: translate(0, 0) scaleX(1); }
+
+  10% {
+    transform: translate(0, 0) scaleX(0.8);
+    animation-timing-function: ease-out;
+  }
+
+  20% {
+    transform: translate(0, -22px) scaleX(1);
+    animation-timing-function: linear;
+  }
+  25% { transform: translate(0, -25px) scaleX(1); }
+  30% { transform: translate(0, -22px) scaleX(1); }
+
+  30% {
+    transform: translate(0, -22px) scaleX(0.8);
+    animation-timing-function: ease-out;
+  }
+  40% { transform: translate(0, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+.dotbounce {
+  animation: dotbounce 2s linear infinite;
+}
+
+.dotbounce__0 {
+  animation-delay: 0ms;
+  transform-origin: -18px -10px;
+}
+
+.dotbounce__1 {
+  animation-delay: 500ms;
+  transform-origin: -6px -10px;
+}
+
+.dotbounce__2 {
+  animation-delay: 1000ms;
+  transform-origin: 6px -10px;
+}
+
+.dotbounce__3 {
+  animation-delay: 1500ms;
+  transform-origin: 18px -10px;
+}
