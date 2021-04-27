@@ -1,0 +1,14 @@
+/* dotspin */
+
+@keyframes dotspin {
+  0% { transform: rotate(0deg) translate(35px, 0); }
+  100% { transform: rotate(-360deg) translate(35px, 0); }
+}
+
+.dotspin {
+  animation: dotspin 3s linear infinite;
+}
+
+.dotspin--0 { animation-delay: -3000ms; }
+.dotspin--1 { animation-delay: -2000ms; }
+.dotspin--2 { animation-delay: -1000ms; }
