@@ -1,0 +1,140 @@
+
+/* dwave */
+@keyframes dwave {
+  0% { transform: rotate(45deg); }
+  25% { transform: rotate(-45deg); }
+  50% { transform: rotate(-135deg); }
+  75% { transform: rotate(-225deg); }
+  100% { transform: rotate(-225deg); }
+}
+
+.dwave {
+  --animd: 2s;
+
+  animation: dwave calc(4 * var(--animd)) step-end infinite;
+}
+
+@keyframes dwave__box {
+  0% { transform: translate(var(--x-offset), var(--y-offset)) scale(0.1); }
+  10% { transform: translate(var(--x-offset), var(--y-offset)) scale(0.5); }
+  20% { transform: translate(var(--x-offset), var(--y-offset)) scale(0.1); }
+  100% { transform: translate(var(--x-offset), var(--y-offset)) scale(0.1); }
+}
+
+.dwave__box {
+  animation: dwave__box var(--animd) infinite;
+  stroke-width: 1;
+  transform-origin: 0 0;
+}
+
+.dwave__box--0 {
+  --x-offset: -15px;
+  --y-offset: -15px;
+
+  animation-delay: calc(-8 * var(--animd) / 8);
+}
+
+.dwave__box--1 {
+  --x-offset: -5px;
+  --y-offset: -15px;
+
+  animation-delay: calc(-7 * var(--animd) / 8);
+}
+
+.dwave__box--2 {
+  --x-offset: 5px;
+  --y-offset: -15px;
+
+  animation-delay: calc(-6 * var(--animd) / 8);
+}
+
+.dwave__box--3 {
+  --x-offset: 15px;
+  --y-offset: -15px;
+
+  animation-delay: calc(-5 * var(--animd) / 8);
+}
+
+.dwave__box--4 {
+  --x-offset: -15px;
+  --y-offset: -5px;
+
+  animation-delay: calc(-7 * var(--animd) / 8);
+}
+
+.dwave__box--5 {
+  --x-offset: -5px;
+  --y-offset: -5px;
+
+  animation-delay: calc(-6 * var(--animd) / 8);
+}
+
+.dwave__box--6 {
+  --x-offset: 5px;
+  --y-offset: -5px;
+
+  animation-delay: calc(-5 * var(--animd) / 8);
+}
+
+.dwave__box--7 {
+  --x-offset: 15px;
+  --y-offset: -5px;
+
+  animation-delay: calc(-4 * var(--animd) / 8);
+}
+
+.dwave__box--8 {
+  --x-offset: -15px;
+  --y-offset: 5px;
+
+  animation-delay: calc(-6 * var(--animd) / 8);
+}
+
+.dwave__box--9 {
+  --x-offset: -5px;
+  --y-offset: 5px;
+
+  animation-delay: calc(-5 * var(--animd) / 8);
+}
+
+.dwave__box--a {
+  --x-offset: 5px;
+  --y-offset: 5px;
+
+  animation-delay: calc(-4 * var(--animd) / 8);
+}
+
+.dwave__box--b {
+  --x-offset: 15px;
+  --y-offset: 5px;
+
+  animation-delay: calc(-3 * var(--animd) / 8);
+}
+
+.dwave__box--c {
+  --x-offset: -15px;
+  --y-offset: 15px;
+
+  animation-delay: calc(-5 * var(--animd) / 8);
+}
+
+.dwave__box--d {
+  --x-offset: -5px;
+  --y-offset: 15px;
+
+  animation-delay: calc(-4 * var(--animd) / 8);
+}
+
+.dwave__box--e {
+  --x-offset: 5px;
+  --y-offset: 15px;
+
+  animation-delay: calc(-3 * var(--animd) / 8);
+}
+
+.dwave__box--f {
+  --x-offset: 15px;
+  --y-offset: 15px;
+
+  animation-delay: calc(-2 * var(--animd) / 8);
+}
