@@ -17,4 +17,5 @@ jobs:
       run: |-
         npm ci
         npm run lint
-        npm run deploy:storybook -- --ci
+        echo $GH_TOKEN
+        npm run deploy:storybook -- --ci --host-token-env-variable=GH_TOKEN
