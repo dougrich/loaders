@@ -1,9 +1,9 @@
 @keyframes bouncing-ball__bounce {
-  0% { transform: translate(-45px,0); }
-  25% { transform: translate(0px,0); }
-  50% { transform: translate(45px,0); }
-  75% { transform: translate(0px,0); }
-  100% { transform: translate(-45px,0); }
+  0% { transform: translate(-45px, 0); }
+  25% { transform: translate(0, 0); }
+  50% { transform: translate(45px, 0); }
+  75% { transform: translate(0, 0); }
+  100% { transform: translate(-45px, 0); }
 }
 
 @keyframes bouncing-ball__spin {
@@ -15,7 +15,7 @@
 }
 
 .bouncing-ball__n {
-  transform: translate(-45px,0);
+  transform: translate(-45px, 0);
   animation: bouncing-ball__bounce 4s linear infinite;
 }
 
