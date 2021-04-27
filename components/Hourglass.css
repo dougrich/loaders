@@ -1,0 +1,45 @@
+
+/* hourglass loader */
+@keyframes hourglass__sand {
+  0% {
+    transform: scaleY(1);
+    transform-origin: 0 0;
+  }
+
+  30% {
+    transform: scaleY(0);
+    transform-origin: 0 0;
+  }
+
+  50% {
+    transform: scaleY(0);
+    transform-origin: 0 -30px;
+  }
+
+  80% {
+    transform: scaleY(1);
+    transform-origin: 0 -30px;
+  }
+}
+
+.hourglass__sand {
+  animation: hourglass__sand var(--hourglass-time) linear infinite;
+  transform-origin: 0 0;
+}
+
+.hourglass__bottom {
+  animation-delay: calc(var(--hourglass-time) * -0.5);
+}
+
+@keyframes hourglass {
+  30% { transform: rotate(0deg); }
+  50% { transform: rotate(180deg); }
+  80% { transform: rotate(180deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.hourglass {
+  --hourglass-time: 3s;
+
+  animation: hourglass var(--hourglass-time) linear infinite;
+}
