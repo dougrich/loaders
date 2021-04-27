@@ -1,0 +1,19 @@
+# source directory
+components
+index.js
+
+# storybook
+.storybook
+storybook-static
+
+# github config
+.github
+
+# babel config
+.babelrc
+
+# rollup config
+rollup.config.js
+
+# other build artifacts
+*.tgz
