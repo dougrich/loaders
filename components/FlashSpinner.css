@@ -1,0 +1,54 @@
+
+/* flash-spinner */
+@keyframes flash-spinner {
+  0% { opacity: 0.25; }
+  25% { opacity: 0.25; }
+  30% { opacity: 1; }
+  50% { opacity: 0.25; }
+  100% { opacity: 0.25; }
+}
+
+.flash-spinner {
+  animation: flash-spinner 1s linear infinite;
+  transform-origin: 0 0;
+}
+
+.flash-spinner__0 {
+  transform: rotate(0deg);
+  animation-delay: -1000ms;
+}
+
+.flash-spinner__1 {
+  transform: rotate(45deg);
+  animation-delay: -875ms;
+}
+
+.flash-spinner__2 {
+  transform: rotate(90deg);
+  animation-delay: -750ms;
+}
+
+.flash-spinner__3 {
+  transform: rotate(135deg);
+  animation-delay: -625ms;
+}
+
+.flash-spinner__4 {
+  transform: rotate(180deg);
+  animation-delay: -500ms;
+}
+
+.flash-spinner__5 {
+  transform: rotate(225deg);
+  animation-delay: -375ms;
+}
+
+.flash-spinner__6 {
+  transform: rotate(270deg);
+  animation-delay: -250ms;
+}
+
+.flash-spinner__7 {
+  transform: rotate(315deg);
+  animation-delay: -125ms;
+}
